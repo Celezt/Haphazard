@@ -1,0 +1,193 @@
+{
+  "DGVersion": 2,
+  "ObjectID": "67586beb4cc41704b92238f1739bed16",
+  "Properties": [],
+  "Nodes": [
+    {
+      "ID": "c01d7fab47154114ba423ec6a5f309fe",
+      "Type": "Celezt.DialogueSystem.Editor.DialogueNode",
+      "Binder": "Celezt.DialogueSystem.DialogueInterpreter"
+    },
+    {
+      "ID": "302977d52b4d41eeb658f27b905859a0",
+      "Type": "Celezt.DialogueSystem.Editor.ActionNode",
+      "Binder": "Celezt.DialogueSystem.ActionInterpreter"
+    },
+    {
+      "ID": "7a62d3e6eebd4cb696d4bdcb8a250428",
+      "Type": "Celezt.DialogueSystem.Editor.ChoiceNode",
+      "Binder": "Celezt.DialogueSystem.ChoiceInterpreter"
+    },
+    {
+      "ID": "a751daff6e214e07afb7e2c38877194f",
+      "Type": "Celezt.DialogueSystem.Editor.DialogueNode",
+      "Binder": "Celezt.DialogueSystem.DialogueInterpreter"
+    }
+  ],
+  "Edges": [
+    {
+      "OutputPort": {
+        "NodeID": "c01d7fab47154114ba423ec6a5f309fe",
+        "PortNumber": -2
+      },
+      "InputPort": {
+        "NodeID": "302977d52b4d41eeb658f27b905859a0",
+        "PortNumber": -1
+      }
+    },
+    {
+      "OutputPort": {
+        "NodeID": "c01d7fab47154114ba423ec6a5f309fe",
+        "PortNumber": 1
+      },
+      "InputPort": {
+        "NodeID": "7a62d3e6eebd4cb696d4bdcb8a250428",
+        "PortNumber": 0
+      }
+    },
+    {
+      "OutputPort": {
+        "NodeID": "c01d7fab47154114ba423ec6a5f309fe",
+        "PortNumber": 3
+      },
+      "InputPort": {
+        "NodeID": "7a62d3e6eebd4cb696d4bdcb8a250428",
+        "PortNumber": 0
+      }
+    },
+    {
+      "OutputPort": {
+        "NodeID": "c01d7fab47154114ba423ec6a5f309fe",
+        "PortNumber": 0
+      },
+      "InputPort": {
+        "NodeID": "a751daff6e214e07afb7e2c38877194f",
+        "PortNumber": 0
+      }
+    },
+    {
+      "OutputPort": {
+        "NodeID": "7a62d3e6eebd4cb696d4bdcb8a250428",
+        "PortNumber": 0
+      },
+      "InputPort": {
+        "NodeID": "a751daff6e214e07afb7e2c38877194f",
+        "PortNumber": 0
+      }
+    },
+    {
+      "OutputPort": {
+        "NodeID": "c01d7fab47154114ba423ec6a5f309fe",
+        "PortNumber": 2
+      },
+      "InputPort": {
+        "NodeID": "a751daff6e214e07afb7e2c38877194f",
+        "PortNumber": 0
+      }
+    },
+    {
+      "OutputPort": {
+        "NodeID": "302977d52b4d41eeb658f27b905859a0",
+        "PortNumber": 0
+      },
+      "InputPort": {
+        "NodeID": "7a62d3e6eebd4cb696d4bdcb8a250428",
+        "PortNumber": 0
+      }
+    }
+  ],
+  "Positions": [
+    {
+      "x": 335,
+      "y": 194
+    },
+    {
+      "x": 335,
+      "y": 634
+    },
+    {
+      "x": 624,
+      "y": 407
+    },
+    {
+      "x": 959,
+      "y": 228
+    }
+  ],
+  "Data": [
+    {
+      "_actorID": "actor_id",
+      "_text": "Hello! Whats up?",
+      "_choiceCount": 3,
+      "_endOffset": 1.0,
+      "_speed": 1.0,
+      "_timeSpeed": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 0.0,
+            "inTangent": 0.0,
+            "outTangent": 1.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          },
+          {
+            "time": 1.0,
+            "value": 1.0,
+            "inTangent": 1.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": 8,
+        "postWrapMode": 8
+      }
+    },
+    {
+      "_choiceCount": 2
+    },
+    {
+      "_text": "Hello! Not much, you?"
+    },
+    {
+      "_actorID": "actor_id",
+      "_text": "Hello! Whats up?",
+      "_choiceCount": 3,
+      "_endOffset": 1.0,
+      "_speed": 1.0,
+      "_timeSpeed": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 0.0,
+            "inTangent": 0.0,
+            "outTangent": 1.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          },
+          {
+            "time": 1.0,
+            "value": 1.0,
+            "inTangent": 1.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": 0,
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": 8,
+        "postWrapMode": 8
+      }
+    }
+  ]
+}
