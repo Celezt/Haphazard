@@ -1,3 +1,6 @@
 [submodule "Packages/UnityAsyncDialogueSystem"]
 	path = Packages/UnityAsyncDialogueSystem
 	url = https://github.com/Celezt/UnityAsyncDialogueSystem
+[submodule "Packages/UnityTimelineExtended"]
+	path = Packages/UnityTimelineExtended
+	url = https://github.com/Celezt/UnityTimelineExtended

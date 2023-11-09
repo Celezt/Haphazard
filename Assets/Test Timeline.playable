@@ -1,6 +1,195 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5550865618030649295
+--- !u!114 &-4158676113590579309
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca06cc5e8f99e6249bf876cf7b4b93d3, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  _template:
+    rid: 1746109239962370048
+  _extensions:
+  - rid: 1746109284294852608
+  - rid: 1746109239962370049
+  references:
+    version: 2
+    RefIds:
+    - rid: 1746109239962370048
+      type: {class: DSPlayableBehaviour, ns: Celezt.DialogueSystem, asm: celezt.asyncdialogue.runtime}
+      data: 
+    - rid: 1746109239962370049
+      type: {class: TextExtension, ns: Celezt.DialogueSystem, asm: celezt.asyncdialogue.runtime}
+      data:
+        _reference: {fileID: 11400000, guid: 5198ed13299115944a5afbba4405ca58, type: 2}
+        _target: {fileID: -4158676113590579309}
+        _propertiesModified:
+          m_Keys:
+          - _editorText
+          - _startOffset
+          - _endOffset
+          - _editorVisibilityCurve
+          m_Values: 00000000
+        _editorText: <b>Hello!<wait=1/></b> <text-gradient="blue red yellow green">What's
+          up?<wait=0.5/></text-gradient> I got something for you!
+        _startOffset: 1.74
+        _endOffset: 0
+        _editorVisibilityCurve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 2
+            outSlope: 2
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+    - rid: 1746109284294852608
+      type: {class: ActorExtension, ns: Celezt.DialogueSystem, asm: celezt.asyncdialogue.runtime}
+      data:
+        _reference: {fileID: 0}
+        _target: {fileID: -4158676113590579309}
+        _propertiesModified:
+          m_Keys:
+          - _editorText
+          m_Values: 01
+        _editorText: <b><text-gradient="white transparent">Celezt
+--- !u!114 &-1979012750275151796
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca06cc5e8f99e6249bf876cf7b4b93d3, type: 3}
+  m_Name: Dialogue(Clone)
+  m_EditorClassIdentifier: 
+  _template:
+    rid: 1746109239962370048
+  _extensions:
+  - rid: 1746109284294852608
+  - rid: 1746109239962370049
+  references:
+    version: 2
+    RefIds:
+    - rid: 1746109239962370048
+      type: {class: DSPlayableBehaviour, ns: Celezt.DialogueSystem, asm: celezt.asyncdialogue.runtime}
+      data: 
+    - rid: 1746109239962370049
+      type: {class: TextExtension, ns: Celezt.DialogueSystem, asm: celezt.asyncdialogue.runtime}
+      data:
+        _reference: {fileID: 0}
+        _target: {fileID: -1979012750275151796}
+        _propertiesModified:
+          m_Keys:
+          - _editorText
+          - _startOffset
+          - _endOffset
+          - _editorVisibilityCurve
+          m_Values: 01010001
+        _editorText: HAHAHA
+        _startOffset: 0
+        _endOffset: 0
+        _editorVisibilityCurve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+    - rid: 1746109284294852608
+      type: {class: ActorExtension, ns: Celezt.DialogueSystem, asm: celezt.asyncdialogue.runtime}
+      data:
+        _reference: {fileID: 0}
+        _target: {fileID: -1979012750275151796}
+        _propertiesModified:
+          m_Keys:
+          - _editorText
+          m_Values: 01
+        _editorText: <b><text-gradient="white transparent">Celezt
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfda56da833e2384a9677cd3c976a436, type: 3}
+  m_Name: Test Timeline
+  m_EditorClassIdentifier: 
+  m_Version: 0
+  m_Tracks:
+  - {fileID: 6118023342319559132}
+  m_FixedDuration: 14.766666666666667
+  m_EditorSettings:
+    m_Framerate: 60
+    m_ScenePreview: 1
+  m_DurationMode: 1
+  m_MarkerTrack: {fileID: 4194907353348117248}
+--- !u!114 &4194907353348117248
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a16748d9461eae46a725db9776d5390, type: 3}
+  m_Name: Markers
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips: []
+  m_Markers:
+    m_Objects: []
+--- !u!114 &6118023342319559132
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,7 +199,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b144cd9e9fc1684fa09a9504988bd14, type: 3}
-  m_Name: Dialogue Track (1)
+  m_Name: Dialogue Track
   m_EditorClassIdentifier: 
   m_Version: 3
   m_AnimClip: {fileID: 0}
@@ -22,12 +211,12 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 1
+    m_Start: 2.3833333333333333
     m_ClipIn: 0
-    m_Asset: {fileID: -3243131972204765645}
-    m_Duration: 3.8833333333333337
+    m_Asset: {fileID: -4158676113590579309}
+    m_Duration: 5
     m_TimeScale: 1
-    m_ParentTrack: {fileID: -5550865618030649295}
+    m_ParentTrack: {fileID: 6118023342319559132}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: 0
@@ -89,10 +278,80 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: 'Hello! What''s up? I got something for you! '
+    m_DisplayName: Hello! What's up? I got something for you!
+  - m_Version: 1
+    m_Start: 7.383333333333333
+    m_ClipIn: 0
+    m_Asset: {fileID: -1979012750275151796}
+    m_Duration: 5
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 6118023342319559132}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: HAHAHA
   m_Markers:
-    m_Objects: []
---- !u!114 &-3243131972204765645
+    m_Objects:
+    - {fileID: 8255203729488814713}
+--- !u!114 &8255203729488814713
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,114 +360,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca06cc5e8f99e6249bf876cf7b4b93d3, type: 3}
-  m_Name: DialogueAsset
+  m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
+  m_Name: Signal Emitter
   m_EditorClassIdentifier: 
-  _template:
-    rid: 3518714325676589056
-  _actor: 
-  _text: <b>Hello!</b><wait=1/> What's up?<wait=1/> I got something for you!
-  _trimmedText: '<b>Hello!</b> What''s up? I got something for you! '
-  _startOffset: 0.5
-  _endOffset: 0.5
-  _visibilityCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 1.1664095
-      outSlope: 1.1664095
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.29119703
-      value: 0.33965498
-      inSlope: 2.578785
-      outSlope: 2.578785
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.3875888
-      value: 0.72437
-      inSlope: 1.5563761
-      outSlope: 1.5563761
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.87817115
-      value: 0.29343837
-      inSlope: 2.460608
-      outSlope: 2.460608
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 5.7996244
-      outSlope: 5.7996244
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _length: 42
-  references:
-    version: 2
-    RefIds:
-    - rid: 3518714325676589056
-      type: {class: DialogueBehaviour, ns: Celezt.DialogueSystem, asm: celezt.asyncdialogue.runtime}
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfda56da833e2384a9677cd3c976a436, type: 3}
-  m_Name: Test Timeline
-  m_EditorClassIdentifier: 
-  m_Version: 0
-  m_Tracks:
-  - {fileID: -5550865618030649295}
-  m_FixedDuration: 0
-  m_EditorSettings:
-    m_Framerate: 60
-    m_ScenePreview: 1
-  m_DurationMode: 0
-  m_MarkerTrack: {fileID: 4194907353348117248}
---- !u!114 &4194907353348117248
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a16748d9461eae46a725db9776d5390, type: 3}
-  m_Name: Markers
-  m_EditorClassIdentifier: 
-  m_Version: 3
-  m_AnimClip: {fileID: 0}
-  m_Locked: 0
-  m_Muted: 0
-  m_CustomPlayableFullTypename: 
-  m_Curves: {fileID: 0}
-  m_Parent: {fileID: 11400000}
-  m_Children: []
-  m_Clips: []
-  m_Markers:
-    m_Objects: []
+  m_Time: 12.383333333333333
+  m_Retroactive: 0
+  m_EmitOnce: 0
+  m_Asset: {fileID: 11400000, guid: 3c59fa33e3f573a45821ee2785c7a29c, type: 2}

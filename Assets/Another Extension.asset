@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bc51ded98cf6b64e868d839919a2f2a, type: 3}
+  m_Name: Another Extension
+  m_EditorClassIdentifier: 
+  _extensions:
+  - rid: 4901859434834690048
+  references:
+    version: 2
+    RefIds:
+    - rid: 4901859434834690048
+      type: {class: TextExtension, ns: Celezt.DialogueSystem, asm: celezt.asyncdialogue.runtime}
+      data:
+        _reference: {fileID: 0}
+        _target: {fileID: 11400000}
+        _propertiesModified:
+          m_Keys:
+          - _editorText
+          - _startOffset
+          - _endOffset
+          - _editorVisibilityCurve
+          m_Values: 01010101
+        _editorText: <b>Hello!<wait=1/></b> <text-gradient="blue red yellow green">What's
+          up?<wait=0.5/></text-gradient> I got something for you!
+        _startOffset: 1.74
+        _endOffset: 0
+        _editorVisibilityCurve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 2
+            outSlope: 2
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
